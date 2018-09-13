@@ -1,0 +1,49 @@
+Create Table
+
+create table Supplier(
+	nam_supplier Varchar(30)
+	id_supplier integer
+	jenis_supplier	Varchar(30)
+	alamat_supplier Varchar(30)
+	constraint supplier_pk primary key(id_supplier)
+);
+
+create table Pabrik(
+	nam_pabrik Varchar(30)
+	id_pabrik integer
+	nomor_pabrik integer
+	alamat_pabrik Varchar(30)
+	constraint supplier_pk primary key(id_pabrik)
+);
+
+create table Dealer(
+	nam_dealer Varchar(30)
+	id_dealer integer
+	nomor_dealer integer
+	jenis_dealer	Varchar(30)
+	alamat_alamat Varchar(30)
+	constraint supplier_pk primary key(id_dealer)
+);
+
+create table Pelanggan(
+	nam_pelanggan Varchar(30)
+	no_ktp integer
+	alamat_pelanggan Varchar(30)
+	constraint supplier_pk primary key(no_ktp)
+);
+
+
+Insert
+
+INSERT INTO Supplier('Jaya','1232','Roda dua','mekarsari no.2');
+INSERT INTO Pabrik('Wisnu Kencana1','102030','0813456545','Cikarang Utama');
+INSERT INTO Dealer('YaaMaaf','121234','082216646195','Yamaha','Bekasi Timur  No.4');
+INSERT INTO Pelanggan('Yulianto','11123232220898','Ciputra jaya no.56');
+
+
+Select
+
+Select nama_pelanggan,no_ktp from Pelanggan;
+
+Select nama_supplier from Supplier
+where id_supplier ='1232';
